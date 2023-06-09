@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/loader.css">
+	<script src="js/utils.js"></script>
+	<title>Search</title>
+</head>
+
+<body>
+	<div class="overlay"></div>
+	<div class="alert">
+		<p class="alert__title">Ошибка!</p>
+		<button class="alert__btn">okay</button>
+	</div>
+	<div id="preloader">
+		<div class="loader">Loading...</div>
+	</div>
+	<div class="container">
+		<div class="search__container">
+			<form method="GET">
+				<div class="search">
+					<label class="search__title" for="search__area">Введите страну: </label>
+					<input id="search__area" type="text">
+					<button id="search__btn">Show information</button>
+				</div>
+			</form>
+			<div class="info__container">
+			</div>
+		</div>
+	</div>
+	<script src="js/errorAlert.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+.overlay
+	width: 100vw
+	height: 100vh
+	+darkscreen
+	display: none
+	position: fixed
+	z-index: 3
+
+.alert
+	min-width: 400px
+	min-height: 200px
+	max-height: 99vh
+	border-radius: 15px
+	border: 2px solid brown
+	background: $beige
+	+dbetween
+	display: none
+	transition: all 1s ease
+	padding: 20px
+	+center
+	z-index: 4
+	&__title
+		font-size: 25px
+	&__subtitle,&__list
+		font-size: 20px
+	&__image
+		+square(60px)
+	&__btn
+		+width(100px)
+		min-height: 30px
+		text-transform: uppercase
+		color: white
+		background: $red
+		border: none
+		margin-left: auto
